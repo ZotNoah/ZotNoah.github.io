@@ -1,0 +1,150 @@
+/*Universal CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header h1{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+    margin-bottom: 40x;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    text-align: center;
+
+}
+
+/*End of Universal CSS*/
+/*Nav CSS*/
+nav{
+    background-color: lightgray;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    margin: 0%;
+    z-index: 1;
+}
+
+nav ul{
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav li a{
+    display: inline-block;
+    margin: 9px 20px;
+    padding: 20px 20px;
+     
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 25px;
+}
+
+nav li:hover, nav a:hover{
+    color: red;
+    background-color: skyblue;
+}
+/*End of Nav CSS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    border: 2px solid black;
+    border-radius: 5px ;
+    box-shadow: 2px 2px black;
+    padding: 15px;
+    margin: 10px auto;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    
+}
+
+#Showcase{
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+footer hr{
+    margin: 20px;
+}
+
+
+
+/*Resume.html CSS*/
+#resume_header h2{
+    color: black;
+    margin: 5px 0px;
+}
+
+#resume_header address{
+    margin: 5px 0px;
+}
+
+.jobs li{
+    margin-left: 20px;
+}
+
+.resume_style{
+    margin: 20px 0px;
+    position: relative;
+    left: 40px;
+    width: 80%;
+}
+
+.resume_style h2 {
+    color: red;
+}
+
+.jobs{
+    margin: 20px 0px;
+    position: relative;
+    left: 40px;
+    
+}
+
+.school{
+    margin: 20px 0px;
+    position: relative;
+    left: 40px;
+    
+}
+
+
+
+
+
+
+/*End of Resume.html CSS*/
