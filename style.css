@@ -55,23 +55,7 @@ nav li:hover, nav a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*index.html CSS*/
 .container{
     padding: 15px;
     margin: 10px auto;
@@ -99,7 +83,21 @@ footer{
 footer hr{
     margin: 20px;
 }
+/*End of index.html CSS*/
+.containerProjects{
+    padding: 15px;
+    margin: 10px auto;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px;
+}
 
+/*Projects.html CSS*/
+
+/*End of Projects.html CSS*/
 
 
 /*Resume.html CSS*/
