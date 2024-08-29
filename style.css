@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-header h1{
+#opener{
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 100px;
@@ -14,6 +14,8 @@ header h1{
     text-align: center;
 
 }
+
+
 
 /*End of Universal CSS*/
 /*Nav CSS*/
@@ -62,6 +64,68 @@ nav div{
 
 .menu-toggle{
     display: none;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display:block;
+    float: right;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content li{
+    list-style: none;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+#mobileButton{
+    display: none;
+    margin: 10px 35px;
+    padding: 18px 20px;
+    position: relative;
+    bottom: 30px;
+     
+    width: 85px;
+    text-align: center;
+    text-decoration: none;
+
+    border: none;
+    border-radius: 10%;
+    background-color: rgb(223, 20, 20);
+    color: white;
+}
+
+#mobileButton:hover{
+    box-shadow: 0 5px 10px;
+    color: rgb(0, 0, 0);
 }
 /*End of Nav CSS*/
 
@@ -239,6 +303,17 @@ form button:hover{
 
 
 /*Mobile Nav CSS*/
+
+
+@media only screen and (max-width: 600px){
+    nav ul{
+        display: none;
+    }
+
+    #mobileButton{
+        display: inline-block;
+    }
+}
 
 
 /*End of Mobile Nav CSS*/

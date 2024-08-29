@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Website</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./dropDown.js"></script>
 </head>
 <body>
+    <header>
     <nav>
         <ul>
             <li><a href="./index.html">Home</a></li>
@@ -14,11 +16,20 @@
             <li><a href="./resume.html">Resume</a></li>
             <li><a href="./contact.html">Contact</a></li>
         </ul>
+        <div class="dropdown">
+            <button onclick="dropDown()" class="dropbtn" id="mobileButton">Button</button>
+            <div id="myDropdown" class="dropdown-content">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./resume.html">Resume</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </div>
+        </div>
     </nav>   
-    <header>
-        <h1>Noah Unverzagt's Resume</h1>
+    
     </header>
     <main>
+        <h1 id="opener">Noah Unverzagt's Resume</h1>
         <section>
             <div id="AboutMe">
                 <h2>About Me</h2>
