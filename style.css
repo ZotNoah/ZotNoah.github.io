@@ -15,8 +15,6 @@
 
 }
 
-
-
 /*End of Universal CSS*/
 /*Nav CSS*/
 nav{
@@ -198,7 +196,7 @@ footer hr{
     text-decoration: none;
 }
 
-div a:hover{
+.container a:hover{
     box-shadow: 0 5px 10px;
     color: rgb(0, 0, 0);
 }
@@ -244,6 +242,7 @@ div a:hover{
     left: 40px;
     
 }
+
 /*End of Resume.html CSS*/
 
 /*Contact.hmtl CSS*/
