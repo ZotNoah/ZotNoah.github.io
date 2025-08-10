@@ -3,74 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./dropDown.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Noah Unverzagt Portfolio</title>
 </head>
 <body>
     <header>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./resume.html">Resume</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-        <div class="dropdown">
-            <button onclick="dropDown()" class="dropbtn" id="mobileButton">☰</button>
-            <div id="myDropdown" class="dropdown-content">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./resume.html">Resume</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </div>
-        </div>
-    </nav>   
-    
     </header>
     <main>
-        <h1 id="opener">Noah Unverzagt's Resume</h1>
-        <section>
-            <div id="AboutMe">
-                <h2>About Me</h2>
-                <p>Hello, and welcome to my Website!</p>
+        <section class="heroSection">
+  
+            <h1>
+                Noah Unverzagt's Portfolio
+            </h1>
+            <ul id="heroNav">
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+        <div id="navBar">
+            <nav id="stickyNav">
+                <ul>
+                    <li><a href="#">// Home</a></li>
+                    <li><a href="#aboutMe">// About</a></li>
+                    <li><a href="#portfolio">// Projects</a></li>
+                    <li><a href="#resume">// Resume</a></li>
+                    <li><a href="#contact">// Contact</a></li>
+                </ul>
+            </nav>
+             
+        </div>
+        <div class="dropdown" id="mobileDropdown">
+            <button onclick="dropDown()" class="dropbtn" id="mobileButton">☰</button>
+            <ul id="myDropdown" class="dropdown-content">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutMe">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
 
-                <p>My name is Noah Unverzagt and I am a college student studying Web Development at Metropollitan Community College in Omaha Nebraska. My objective is to get an entry level job as a Front-End Developer. I currently Work at Nebraska Furniture Mart as a Lead in the Mezzinine where I help facilitate procedures and make sure staff are working safely and efficiently. Most of my experiance with web developement has been through my school, I have had two internships. One from Childhood Cancer Society, where I learned about the design process and how to collabaroate with others to achieve a vision. The other at Nebraska Furniture Mart, where I learned about Agile development, the fundaments of SQL, and more about how websites work on the back end through ASP.NET.</p>
+        <section id="aboutMe" class="fade-in">
+            <h1>
+                About Me
+            </h1>
+            <p>Hello, and welcome to my Webiste!</p>
+            <p>My name is Noah Unverzagt, and I am a college student pursuing a degree in Web Development at Metropolitan Community College in Omaha, Nebraska. My objective is to obtain an entry-level position as a Front-End Developer, where I can apply my skills and continue to grow professionally.</p>
 
-                <p>I am currently looking to begin my career as a Web developer. My goal is to get an entry level job were I can learn more about the industry and develop my programming skills.</p>
+            <p>I am currently employed at Nebraska Furniture Mart while completing my studies. Most of my web development experience has come through academic projects, but I have also completed two internships that have broadened my practical knowledge of the field.</p>
+
+            <p>The first was with the <strong>Childhood Cancer Society</strong>, where I gained valuable experience in the design process and learned how to collaborate effectively with a team to bring a shared vision to life. The second was with <strong>Nebraska Furniture Mart</strong>, where I was introduced to Agile development practices, the fundamentals of SQL, and backend technologies such as ASP.NET.</p>
+
+            <p>I am passionate about building user-friendly, accessible websites and am eager to contribute to a professional development team.</p>
+
+        </section>
+        <section id="portfolio" class="fade-in">
+            <h1>
+                Portfolio
+            </h1>
+            <div class="showcase">
+                <div id="project1" class="project"> 
+                    <div class="description">
+                        <img src="images/wireframe2.png">
+                        <h3>Wireframes/UX Design</h3>
+                        <p>Wireframe/UX Design projects I am currently working on:</p>
+                        <ul class="projectList">
+                            <li><a href="https://www.figma.com/design/UmOhSk8L7FB0bXhug5jGLU/Concert-Discovery?node-id=0-1&p=f&t=yXUNjtMZbYyQYGXd-0" target="_blank">Figma Concert Discovery App - Work in Progress</a></li>
+                            <li><a href="UXProjects/Gelato Wireframe.pdf">Gelato Wireframe</a></li>
+                            <li><a href="images/sitemap.PNG">Gelato Sitemap</a></li>
+                        </ul>
+                         
+                    </div>     
+                </div>  
+            
+                <div id="project2" class="project">
+                    <div class="description">
+                        <img src="images/internship2.png">
+                        <h3>Internships</h3>
+                        <p>Pojects I have worked on during my internships:</p> 
+                        <ul class="projectList">
+                            <li><a href="UXProjects/Adventure Ted Scholarship.pdf">Childhood Cancer Socity Website Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="project3" class="project">
+                    <div class="description">
+                        <img src="images/compsci2.png">
+                        <h3>JavaScript Projects</h3>
+                        <p>Projects I have worked on to learn/develop my skills as a programmer:</p>
+                        <ul class="projectList">
+                            <li><a href="JavaScriptProjects/calculatorProject/index.html">Calculator App</a></li>
+                            <li><a href="JavaScriptProjects/stopwatchProject/index.html">Stopwatch</a></li>
+                            <li><a href="JavaScriptProjects/pizzaProject/index.html">Create a Pizza</a></li>
+                            <li><a href="JavaScriptProjects/financeProject/index.html">Finance Calculator</a></li>
+                        </ul> 
+                    </div>
+                </div>
+
             </div>
-         </section>
-         <section id="Showcase">
-            <div id="Projects" class="container">
-                <h2>Projects</h2>
-                <img src="./images/ProjectImage.jpg" width="200" height="200" style="border-radius: 10%;">
-                <p>Here you can find various projects that I have worked on while learning how to code!</p>
-                <a href="./projects.html" class="projectButton">Projects</a>
+        </section>
+        <section id="resume" class="fade-in">
+            <h1>
+                Resume
+            </h1>
+             <h2>Experience</h2>
+            <div class="jobs">
+                <h5>October 2023 to Present</h5>
+                <h3>Nebraska Furniture Mart - <em>Warehouse Lead Mezzanine</em></h3>
+                <ul>
+                    <li>Work with staff on completing tasks such as deliveries, pick-ups, receiving, UPS, supplies and floor replenishment.</li>
+                    <li>Answer phone calls to assist other departments biased on their needs.</li>
+                    <li>Reply/send emails to staff/other deparmtnetsto help assist with communication and procedures.</li>
+                    <li>Work with staff on projects and deadlines.</li>
+                    <li>Schedualing.</li>
+                    <li>Ensure that staff are follwing saftey procedures.</li>
+                    <li>Coach both staff and management on procedures and processes.</li>
+                    <li>Engage staff with difficult converstations to help improve themselves and the department.</li>
+                </ul>
             </div>
-            <div id="Resume" class="container">
-                <h2>Resume</h2>
-                <img src="./images/resume.png" width="200" height="200">
-                <p>Here you can find my offical resume!</p><br>
-                <a href="./resume.html" class="projectButton">Resume</a>
+            <div class="jobs">
+                <h5>March 2023 to June 2023</h5>
+                <h3>Nebraska Furniture Mart - <em>IT Applications Software Development Intern</em></h3>
+                <ul>
+                    <li>Learned the fundamentals of C#, SQL, and ASP.NET.</li>
+                    <li>Participated in daily scrum and bi-weekly developer meetings.</li>
+                    <li>Learned and implemented agile software development methodology.</li>
+                    <li>Worked with test environment of Sales application (program that NFM sales team used on tablets to make/finalize sales).</li>
+                </ul>
             </div>
-            <div id="Contact" class="container">
-                <h2>Contact</h2>
-                <img src="./images/Contact.png" width="200" height="200">
-                <p>Contact me and let me know what you think!</p><br>
-                <a href="./contact.html" class="projectButton">Contact</a>
+            <div class="jobs">
+                <h5>February 2023 to April 2023</h5>
+                <h3>Childhood Cancer Society - <em>Web Development Team Intern</em></h3>
+                <ul>
+                    <li>Worked on static web pages (HTML & CSS).</li>
+                    <li>Used figma to design web layout.</li>
+                    <li>Collaborated with team members to design and build web pages.</li>
+                    <li>Participated in weekly meeetings with graphic design and video production teams to collaborate in web design.</li>
+                </ul>
             </div>
-         </section>
-        
+        </div>
+        <div id="resume_education">
+            <h2>Education</h2>
+            <div class="school">
+                <h3>Metro Community College- <em>Web Development Career Certificate(WDCCI)</em></h3>
+                <p>Strong technical foundation in developing content for the World Wide Web and any internet-related support.</p>
+            </div>
+            <div class="school">
+                <h3>Metro Community College- <em>Web Programming Career Certificate(WPCII)</em></h3>
+                <p>Entry-level programming focused on web application development and maintenance.</p>
+            </div>
+            <div class="school">
+                <h3>Metro Community College- <em>Associate in Applied Science (AASIT)</em></h3>
+                <p>Currently studying the fundamentals of I.T, HTML, CSS, Java and JavaScript with a focus in Web Development.</p>
+            </div>
+        </div>
+        </section>
+        <section id="contact" class="fade-in">
+            <div id="contactContainer">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <h3>Contact</h3>
+                    <input type="hidden" name="access_key" value="2cc17d68-6271-4ce0-8d94-214f389c574b">
+                    <input type="text" id="name" name="name" placeholder="Name" class="contactMe"><br><br>
+                    <input type="text" id="email" name="email" placeholder="Email" class="contactMe"><br><br>
+                    <textarea type="text" id="message" name="message" placeholder="Message" rows="10" cols="50"
+                    style="resize: none"></textarea><br>
+                    <div id="contactSubmit">
+                        <button type="submit" id="contactButton">submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
 
     </main>
     <footer>
-        <hr>
-        <p>Created and Designed by Noah Unverzagt</p>
-        <address>
-            Email: <a href="mailto:unverzagt.noah@gmail.com">Noah Unverzagt</a>
-        </address>
 
     </footer>
-    
+    <script src="index.js"></script>
+    <script src="dropDown.js"></script>
 </body>
 </html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizza Project</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div id="intro">
+            <h1 class="introSpacing">Pizza Project!!!!</h1>
+            <h3 class="introSpacing">Create a Pizza!</h3>
+            <p class="introSpacing">Hello! Here is a selection of ingredients you can use to build a pizza!</p>
+            <P class="introSpacing">Before you start, Here's a diagram of pizza sizes and what you can expect from each size.</P>
+        </div>
+        
+
+        <table id="pizzaTable">
+            <tr>
+                <th colspan="5">Pizza Size Chart!</th>
+            </tr>
+            <tr>
+                <td>Size</td>
+                <td>Large</td>
+                <td>Medium</td>
+                <td>Small</td>
+                <td>Personal</td>
+            </tr>
+            <tr>
+                <td>Inches</td>
+                <td>16"</td>
+                <td>14"</td>
+                <td>12"</td>
+                <td>8"</td>
+            </tr>
+            <tr>
+                <td>Number of slices</td>
+                <td>12</td>
+                <td>10</td>
+                <td>8</td>
+                <td>6</td>
+            </tr>
+        </table>
+        <br>
+        <div class="pizzaIngredientes">
+            <form id="pizzaForm">
+                <div class="titleOptions">
+                    <h3>Pizza Size</h3>
+                </div>
+                <div id="sizeOptions" class="pizzaOptions">
+                    
+                    <div id="radioStyle">
+                        <input type="radio" id="large" name="size" value="Large" checked>
+                        <label for="large">Large</label>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="medium" name="size" value="Medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="small" name="size" value="Small">
+                        <label for="small">Small</label>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="personal" name="size" value="Personal">
+                        <label for="personal">Personal</label>
+                    </div>
+                </div>
+                <br>
+
+                <div class="titleOptions">
+                    <h3>Crust Options</h3>
+                </div>
+                <div id="crustOptions" class="pizzaOptions">
+                    
+                    <div id="radioStyle">
+                        <input type="radio" id="handTossed" name="crust" value="Hand Tossed" checked>
+                        <label for="handTossed">Hand Tossed</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="thinCrust" name="crust" value="Thin Crust">
+                        <label for="thinCrust">Thin Crust</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="panCrust" name="crust" value="Pan Crust">
+                        <label for="panCrust">Pan Crust</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="stuffCrust" name="crust" value="Stuffed Crust">
+                        <label for="stuffedCrust">Stuffed Crust</label><br>
+                    </div>
+                </div>
+                <br>
+
+                <div class="titleOptions">
+                    <h3>Sauce Options</h3>
+                </div>
+                <div id="sauceOptions" class="pizzaOptions">
+                    <div id="radioStyle">
+                        <input type="radio" id="tomatoSauce" name="sauce" value="Tomato Sauce" checked>
+                        <label for="tomatoSauce">Tomato Sauce</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="honeyBBQSauce" name="sauce" value="Honey BBQ Sauce">
+                        <label for="honeyBBQSauce">Honey BBQ Sauce</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="garlicParmesanSauce" name="sauce" value="Garlic Parmesan Sauce">
+                        <label for="garlicParmesanSauce">Garlic Parmesan Sauce</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="alfredoSauce" name="sauce" value="Alfredo Sauce">
+                        <label for="alfredoSauce">Alfredo Sauce</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="ranch" name="sauce" value="Ranch">
+                        <label for="ranch">Ranch</label>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="radio" id="noSauce" name="sauce" value="No Sauce">
+                        <label for="noSauce">No Sauce</label><br>
+                    </div>
+                </div>
+                <br>
+
+                <div class="titleOptions">
+                    <h3>Meat Toppings</h3>
+                </div>
+                <div id="meatOptions" class="pizzaOptions">
+                    <div id="radioStyle">
+                        <input type="checkbox" id="ham" name="meat" value="Ham">
+                        <label for="ham">Ham</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="checkbox" id="beef" name="meat" value="Beef">
+                        <label for="beef">Beef</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="checkbox" id="pepperoni" name="meat" value="Pepperoni">
+                        <label for="pepperoni">Pepperoni</label><br>
+                    </div id="radioStyle">
+                    <div id="radioStyle">
+                        <input type="checkbox" id="chicken" name="meat" value="Chicken">
+                        <label for="chicken">Chicken</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="checkbox" id="bacon" name="meat" value="Bacon">
+                        <label for="bacon">Bacon</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="checkbox" id="steak" name="meat" value="Steak">
+                        <label for="steak">Steak</label><br>
+                    </div>
+                </div>
+                <br>
+
+                <div class="titleOptions">
+                    <h3>Non-Meat Toppings</h3>
+                </div>
+                <div id="nonMeatOptions" class="pizzaOptions">
+                    <div id="radioStyle">
+                        <input type="checkbox" id="onions" name="nonMeat" value="Onions">
+                        <label for="onions">Onions</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="checkbox" id="bananaPeppers" name="nonMeat" value="Banana Peppers">
+                    <label for="bananaPeppers">Banana Peppers</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="checkbox" id="blackOlives" name="nonMeat" value="Black Olives">
+                        <label for="blackOlives">Black Olives</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="checkbox" id="mushrooms" name="nonMeat" value="Mushrooms">
+                        <label for="mushrooms">Mushrooms</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="checkbox" id="pineapple" name="nonMeat" value="Pineapple">
+                        <label for="pineapple">Pineapple</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="checkbox" id="greenPeppers" name="nonMeat" value="Green Peppers">
+                        <label for="greenPeppers">Green Peppers</label><br>
+                    </div>
+                    <div id="radioStyle">
+                        <input type="checkbox" id="fetaCheese" name="nonMeat" value="Feta Cheese">
+                        <label for="fetaCheese">Feta Cheese</label><br>
+                    </div>
+                </div>
+                <div>
+                    <p id="orderComplete"></p>
+                </div>
+                <div id="submit">
+                    <button type="button" id="clearOrder">Clear</button>
+                    <button type="submit" onclick="orderPizza()">Submit</button>
+                </div>
+            </form>
+            </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="index.js"></script>
+    
+</body>
+</html>

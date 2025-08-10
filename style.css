@@ -1,326 +1,531 @@
-/*Universal CSS*/
+
 *{
     margin: 0px;
     padding: 0px;
+    background-color: #F5E2CE;
+    
 }
 
-#opener{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 100px;
-    margin-bottom: 40x;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 45px;
-    text-align: center;
+/*Start of Nav Bar CSS*/
 
-}
-
-h1,
-h2,
-h3,
-p,
-a{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-/*End of Universal CSS*/
-/*Nav CSS*/
-nav{
-    background-color: lightgray;
-    height: 75px;
-    width: 100%;
+#navBar{
+    height: 80px;
     position: fixed;
-    top: 0px;
-    margin: 0%;
-    z-index: 1;
-    text-transform: uppercase;
-}
-
-nav ul{
-    float: right;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    top: -50px; /* Hidden off-screen at first */
+    left: 0;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    z-index: 9999;
+    transition: top 0.3s ease-in-out;
 }
 
-nav li a{
+#navBar ul{
+width: 600px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+list-style-type: none;
+background-color: #F5E2CE;
+
+}
+
+#navBar li a{
     display: inline-block;
-    margin: 10px 20px;
-    padding: 18px 20px;
-     
-    width: 85px;
-    text-align: center;
+    font-size: 24px;
     text-decoration: none;
+    background-color: #F5E2CE;
+    color: #E5A657;
+    margin-top: 20px;
+    transform: scale(1);
+    transition: font-size 0.3s ease-in-out, transform 0.2s ease-in-out;
 
-    border-radius: 40px;
-    background-color: rgb(223, 20, 20);
-    color: white;
+    
 }
 
-nav a:hover{
-    box-shadow: 0 5px 10px;
-    color: rgb(0, 0, 0);
+#navBar li a:hover{
+    font-size: 28px;
+    text-decoration: underline;
+    transform: scale(1.1);
+    color:#B53324;
+    
 }
 
-nav div{
-    position: absolute;
-    top: 30px;
+.dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 50px; /* 50px from the left */
+    background-color: #F5E2CE;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: flex-end;
+
+    opacity: 0;                 
+    visibility: hidden;          
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; 
 }
 
-.menu-toggle{
-    display: none;
-}
+
 
 .dropbtn {
-    background-color: #3498DB;
+    background-color: #B53324;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 10px 16px;
+    font-size: 24px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .dropdown {
-    position: relative;
-    display:block;
-    float: right;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+    margin-right: 50px;
+}
+
+/* Dropdown menu content */
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content li{
-    list-style: none;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-
-#mobileButton{
-    display: none;
-    margin: 10px 35px;
-    padding: 18px 20px;
-    position: relative;
-    bottom: 30px;
-     
-    width: 85px;
-    text-align: center;
-    text-decoration: none;
-
-    border: none;
-    border-radius: 10%;
-    background-color: rgb(223, 20, 20);
-    color: white;
-}
-
-#mobileButton:hover{
-    box-shadow: 0 5px 10px;
-    color: rgb(0, 0, 0);
-}
-/*End of Nav CSS*/
-
-
-
-/*index.html CSS*/
-.container{
-    padding: 15px;
-    margin: 15px auto;
-    width: 450px;
-    text-align: center;
+    top: 100%;
+    right: 10px;
     background-color: white;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 25px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100px;
 }
 
-.container h2{
-    margin: 10px 10px 20px 10px;
+.dropdown-content li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
 }
 
-.container h3{
-    margin: 10px;
+.dropdown-content.show {
+    display: block;
 }
 
-.container p{
-    margin: 10px 10px 20px 10px;
+.dropbtn:hover {
+    background-color: #992A1F;
 }
 
-#Showcase{
-    background-color: lightgrey;
+/*End of Nav Bar CSS*/
+
+/*Start of Hero Section CSS*/
+.heroSection{
+    max-width: 1500px;
+    margin: auto;
+    min-height: 800px;
+    height: auto;
+    
+}
+
+.heroSection h1 {
+    font-size: 64px;
+    position: relative;
+    margin-top: 25%;
+
+
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideDown 1.3s ease-out forwards;
+    animation-delay: 0.3s;
+
+    color:#B53324;
+}
+
+
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heroSection ul {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 1.2s ease-out forwards;
+  animation-delay: 0.3s; 
+  list-style: none; 
+  padding: 0;
+
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.heroSection li{
+    margin: 20px 0px;
+}
+
+
+.heroSection li a{
+    text-decoration: none;
+    color: #E5A657;
+    font-size: 26px;
+    transform: scale(1);
+    transition: font-size 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.heroSection li a:hover{
+    font-size: 36px;
+    text-decoration: underline;
+    transform: scale(1.1);
+    color:#B53324;
+    
+}
+/*End of Hero Section CSS*/
+
+/*Start of About Me Section CSS*/
+#aboutMe{
+    max-width: 1500px;
+    margin: -80px auto;
+    min-height: 800px;
+    height: auto;
+    padding-top: 80px;
+
+}
+
+#aboutMe h1{
+    color:#B53324;
+    font-size: 36px;
+    margin: 20px;
+
+}
+
+#aboutMe p{
+    color: #b89771;
+    font-size: 18px;
+    margin: 20px;
+
+}
+
+/*End of About Me Section CSS*/
+
+
+/*Start of Projects Section CSS*/
+#portfolio{
+    max-width: 1500px;
+    margin: -80px auto;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 80px;
+
+}
+
+#portfolio h1{
+    color:#B53324;
+    font-size: 36px;
+    margin: 20px;
+
+}
+
+#portfolio a{
+    text-decoration: none;
+}
+
+#portfolio a:visited{
+    color: inherit;
+}
+.showcase {
     display: flex;
+    gap: 20px;
     flex-wrap: wrap;
-    padding: 40px 0px;
+    justify-content: space-between;
+    margin: 20px 20px;
+    
+    
+
 }
 
-#AboutMe{
-    width: 80%px;
-    margin:20px 40px;
+.showcase img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+   
 }
 
-#AboutMe h2{
+.project {
+    flex: 1 1 300px; /* Let it shrink, grow, and wrap at 300px */
+    min-width: 250px; /* Prevent it from shrinking too small */
+    box-sizing: border-box;
+    max-width: 100%; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: flex-grow 0.6s ease-in-out;
+   
+    
+}
+
+.project:hover{
+    flex-grow: 1.1;
+}
+
+.description h3, .description p{
     margin: 10px 0px;
+    background-color: #f9f9f9;
+    
 }
 
-#AboutMe p{
-    margin: 10px 0px;
+.description{
+    background-color: #f9f9f9;
+}
+
+.description h3{
+    font-size: 22px;
+}
+
+.description p{
+    font-size: 18px;
+}
+
+.projectList{
+    background-color: #f9f9f9;
+}
+
+.projectList li{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    width: 360px;
+    background-color: #f9f9f9;
+    color: #E5A657;
+}
+
+.projectList li:hover{
+    font-size: 18px;
+    text-decoration: underline;
+    transform: scale(1.1);
+    color:#B53324;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.projectList a{
+    background-color: #f9f9f9;
+}
+
+/*End of Projects Section CSS*/
+
+
+/*Start of Resume Section CSS*/
+#resume{
+    max-width: 1500px;
+    margin: -80px auto;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 80px;
+
 }
 
 
-footer{
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+
+/*End of Resume Section CSS*/
+#resume h1{
+    color:#B53324;
+    font-size: 36px;
+    margin: 20px;
+
 }
 
-footer hr{
+#resume h2{
+    color:#B53324;
     margin: 20px;
 }
-/*End of index.html CSS*/
 
-
-/*Projects.html CSS*/
-
-.projectButton{
-    border-radius: 40px;
-    background-color: rgb(223, 20, 20);
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+#resume{
+    color: #b89771;
 }
 
-.container a:hover{
-    box-shadow: 0 5px 10px;
-    color: rgb(0, 0, 0);
+.wordpressPortfolio strong{
+    margin-left: 20px;
 }
 
-/*End of Projects.html CSS*/
-
-
-/*Resume.html CSS*/
-#resume_header h2{
-    color: black;
-    margin: 5px 0px;
+#resume a{
+    color: inherit;
 }
 
-#resume_header address{
-    margin: 5px 0px;
+.jobs{
+    margin: 20px 40px;
 }
-
 .jobs li{
     margin-left: 20px;
 }
 
-.resume_style{
-    margin: 20px 0px;
-    position: relative;
-    left: 40px;
-    width: 80%;
-}
-
-.resume_style h2 {
-    color: red;
-}
-
-.jobs{
-    margin: 20px 0px;
-    position: relative;
-    left: 40px;
-    
-}
-
 .school{
-    margin: 20px 0px;
-    position: relative;
-    left: 40px;
-    
+    margin: 20px 40px;
 }
 
-/*End of Resume.html CSS*/
 
-/*Contact.hmtl CSS*/
-.containerForm{
-    
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+/*Start of Contact Page CSS*/
+
+#contact{
+    max-width: 1500px;
+    margin: -180px auto;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 180px;
     padding-right: 50px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px;
 }
-
-form textarea{
-    height: 100px;
-    resize: none;
-}
-
-form input,
-form textarea{
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
+#contactContainer{
+    
+    width: 700px;
+    min-height: 300px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 7px 5px 5px 10px rgba(179,179,179,0.75);
     border: none;
+    overflow: hidden;
+    
+}
+
+#contactContainer h3{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.contactMe{
+    width: 650px;
+    margin: 0px 20px;
+    height: 30px;
     border-radius: 5px;
-    background-color: #f7f7f7;
-    color: #333;
-}
-
-form input:focus,
-form textarea:focus{
-    outline: none;
-    box-shadow: 0 0 5px #333;
-}
-
-form button{
-    display: block;
-    width: 15%;
-    padding: 10px;
+    background-color: lightgray;
     border: none;
+    padding-left: 10px;
+
+}
+
+textarea{
+    width: 650px;
+    margin: 0px 20px;
     border-radius: 5px;
-    background-color: rgb(223, 20, 20);
-    color: #fff;
+    background-color: lightgray;
+    border: none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#contactSubmit{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#contactButton{
+    margin: 20px;
+    background-color: #B53324;;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+#contactButton:hover{
+    box-shadow: 2px 2px black;
     cursor: pointer;
-    transition: 0.3s ease;
+    background-color: #992A1F  ;
+}
+/*End of Contact Page CSS*/
+
+
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 600ms ease-in;
 }
 
-form button:hover{
-    box-shadow: 0 5px 10px;
-    color: rgb(0, 0, 0);
+.fade-in.appear{
+    opacity: 1;
 }
-/*End of Contact.html CSS*/
-
-
-
 
 /*Mobile Nav CSS*/
 
 
 @media only screen and (max-width: 600px){
+
+    .heroSection{
+       width: 400px;
+       margin: auto;
+    }
+
+    .dropdown.show {
+        
+        opacity: 1;
+        visibility: visible; 
+    }
+    #myDropdown.show {
+        display: block;
+    }
+
+
     nav ul{
         display: none;
     }
 
     #mobileButton{
         display: inline-block;
+
     }
+
+    #navBar{
+        display: none;
+    }
+
+    #resume{
+        margin-top: 100px;
+    }
+
+    #contact{
+        max-width: 700px;
+        margin: auto;
+    
+    }
+
+    #contactContainer{
+        
+        width: 400px;
+        margin-left: 50px; 
+        
+        
+    }
+    .contactMe{
+        width: 350px;
+        
+
+    }
+
+    textarea{
+    width: 350px;
 }
+
+
+}
+
 
 
 /*End of Mobile Nav CSS*/
