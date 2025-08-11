@@ -87,14 +87,14 @@ background-color: #F5E2CE;
     display: none;
     position: absolute;
     top: 100%;
-    right: 10px;
+    right: 0;
     background-color: white;
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-right: 25px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    width: 100px;
+    width: 120px;
+    z-index: 1001;
 }
 
 .dropdown-content li a {
@@ -319,8 +319,14 @@ background-color: #F5E2CE;
     cursor: pointer;
 }
 
-.projectList a{
+.projectList a {
+    color: #E5A657;
+    text-decoration: none;
     background-color: #f9f9f9;
+}
+
+.projectList a:visited {
+    color: #E5A657;
 }
 
 /*End of Projects Section CSS*/
@@ -467,6 +473,11 @@ textarea{
 
 
 @media only screen and (max-width: 600px) {
+
+    html {
+        scroll-padding-top: 80px;
+        scroll-behavior: smooth;
+    }
     
     /* GENERAL PAGE LAYOUT */
     body, html {
@@ -484,7 +495,7 @@ textarea{
     #contact {
         padding: 20px;
         width: 100%;
-        margin: 0 auto;
+        margin: 0px auto;
     }
 
     h1, h2, h3 {
@@ -493,7 +504,7 @@ textarea{
     }
 
     p, li, a {
-        font-size: 16px !important;
+        font-size: 18px !important;
     }
 
     /* NAVIGATION BAR */
@@ -519,14 +530,15 @@ textarea{
     }
 
     .dropdown-content {
-        width: 100%;
-        right: 0;
-        margin-right: 0;
+        right: 0; 
+        left: auto;
+        width: 100px;
     }
 
     .dropdown-content li a {
         font-size: 16px;
         padding: 8px;
+        color: #E5A657;
     }
 
     /* HERO SECTION */
@@ -571,7 +583,7 @@ textarea{
 
     .projectList li:hover {
         font-size: 16px;
-        margin-left: 10px;
+        margin-left: 20px;
         transform: scale(1.05);
     }
 
@@ -579,8 +591,7 @@ textarea{
     #contactContainer {
         width: 90%;
         padding: 10px;
-        margin: 0 auto;
-        box-shadow: none;
+        margin: 80px auto;
     }
 
     .contactMe,
