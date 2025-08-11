@@ -376,6 +376,14 @@ background-color: #F5E2CE;
     margin-left: 20px;
 }
 
+.jobs a{
+    color: #E5A657 !important;
+}
+
+.jobs h3 a:hover{
+    color: #B53324 !important;
+}
+
 .school{
     margin: 20px 40px;
 }
@@ -385,10 +393,10 @@ background-color: #F5E2CE;
 
 #contact{
     max-width: 1500px;
-    margin: -180px auto;
+    margin: -100px auto;
     min-height: 100vh;
     height: auto;
-    padding-top: 180px;
+    padding-top: 300px;
     padding-right: 50px;
 }
 #contactContainer{

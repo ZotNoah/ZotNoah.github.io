@@ -12,7 +12,7 @@ window.addEventListener('scroll', function () {
     const scrollY = window.scrollY || window.pageYOffset;
     const screenWidth = window.innerWidth;
 
-    const offset = 400; // ✅ Show dropdown 100px before heroSection ends
+    const offset = 400; //Show dropdown 100px before heroSection ends
 
     if (scrollY > heroBottom - offset && screenWidth <= 600) {
         dropdown.classList.add('show');
