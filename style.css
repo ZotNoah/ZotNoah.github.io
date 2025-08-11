@@ -466,64 +466,135 @@ textarea{
 /*Mobile Nav CSS*/
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
+    
+    /* GENERAL PAGE LAYOUT */
+    body, html {
+        overflow-x: hidden;
+    }
 
-    .heroSection{
-       width: 400px;
-       margin: auto;
+    * {
+        box-sizing: border-box;
+    }
+
+    .heroSection, 
+    #aboutMe, 
+    #portfolio, 
+    #resume, 
+    #contact {
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px !important;
+        text-align: center;
+    }
+
+    p, li, a {
+        font-size: 16px !important;
+    }
+
+    /* NAVIGATION BAR */
+    #navBar {
+        display: none; 
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
     }
 
     .dropdown.show {
-        
         opacity: 1;
-        visibility: visible; 
-    }
-    #myDropdown.show {
-        display: block;
+        visibility: visible;
     }
 
-
-    nav ul{
-        display: none;
+    .dropbtn {
+        font-size: 20px;
+        padding: 8px 12px;
+        margin-right: 10px;
     }
 
-    #mobileButton{
-        display: inline-block;
-
+    .dropdown-content {
+        width: 100%;
+        right: 0;
+        margin-right: 0;
     }
 
-    #navBar{
-        display: none;
+    .dropdown-content li a {
+        font-size: 16px;
+        padding: 8px;
     }
 
-    #resume{
-        margin-top: 100px;
+    /* HERO SECTION */
+    .heroSection h1 {
+        font-size: 32px;
+        margin-top: 120px;
+        text-align: center;
     }
 
-    #contact{
-        max-width: 700px;
-        margin: auto;
-    
+    .heroSection ul {
+        padding: 0;
+        text-align: center;
     }
 
-    #contactContainer{
-        
-        width: 400px;
-        margin-left: 50px; 
-        
-        
-    }
-    .contactMe{
-        width: 350px;
-        
-
+    .heroSection li a {
+        font-size: 18px;
     }
 
-    textarea{
-    width: 350px;
-}
+    /* ABOUT ME / PORTFOLIO */
+    .showcase {
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    .project {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
 
+    .description h3 {
+        font-size: 20px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+
+    .projectList li {
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .projectList li:hover {
+        font-size: 16px;
+        margin-left: 10px;
+        transform: scale(1.05);
+    }
+
+    /* CONTACT SECTION */
+    #contactContainer {
+        width: 90%;
+        padding: 10px;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+
+    .contactMe,
+    textarea {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #contactButton {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        font-size: 16px;
+    }
 }
 
 
