@@ -598,13 +598,14 @@ textarea{
     .jobs {
     max-width: 95%;
     padding: 1rem;
-    text-align: center;
+    
     margin: 0 auto;
   }
 
   .jobs a {
     display: inline-block;
     word-break: break-word;
+    text-align: center;
   }
 
 
