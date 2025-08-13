@@ -120,6 +120,7 @@ background-color: #F5E2CE;
     margin: auto;
     min-height: 800px;
     height: auto;
+    padding: 0 20px; /* Add horizontal padding */
     
 }
 
