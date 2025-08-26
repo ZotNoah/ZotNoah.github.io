@@ -241,84 +241,66 @@ background-color: #F5E2CE;
 #portfolio a:visited{
     color: inherit;
 }
-.showcase {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 20px;
-    
-    
 
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;          /* allows wrapping when space runs out */
+  justify-content: center;  /* centers cards horizontally */
+  gap: 2rem;                /* spacing between cards */
 }
 
-.showcase img {
-    width: 100%;
-    height: 700px;
-    display: block;
+.project-card {
+  flex: 1 1 calc(33.333% - 2rem); /* 3 cards per row */
+  max-width: 320px;               /* prevents cards from stretching too wide */
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project {
-    min-width: 250px;
-    box-sizing: border-box;
-    max-width: 450px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-    transition: flex-grow 0.6s ease-in-out;
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.description h3, .description p{
-    margin: 10px 0px;
-    background-color: #f9f9f9;
-    
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.description{
-    background-color: #f9f9f9;
+/* Tech stack badges */
+.tech-stack span {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0.25rem 0 0;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  background-color: #eee;
 }
 
-.description h3{
-    font-size: 22px;
+/* Project links */
+.project-links a {
+  margin-right: 1rem;
+  font-weight: bold;
+  color: #007acc;
+  text-decoration: none;
 }
 
-.description p{
-    font-size: 18px;
+/* Responsive: stack cards into 1 per row on mobile */
+@media (max-width: 900px) {
+  .project-card {
+    flex: 1 1 calc(45% - 2rem); /* 2 per row on tablets */
+    margin: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .project-card {
+    flex: 1 1 100%; /* 1 per row on mobile */
+  }
 }
 
-.projectList{
-    background-color: #f9f9f9;
-}
-
-.projectList li{
-    margin-left: 20px;
-    margin-bottom: 5px;
-    width: 360px;
-    background-color: #f9f9f9;
-    color: #E5A657;
-}
-
-.projectList li:hover{
-    font-size: 18px;
-    text-decoration: underline;
-    transform: scale(1.1);
-    color:#B53324;
-    margin-left: 50px;
-    cursor: pointer;
-}
-
-.projectList a {
-    color: #E5A657;
-    background-color: #f9f9f9;
-}
-
-.projectList a:hover{
-    color:#B53324;
-}
-
-.projectList a:visited {
-    color: #E5A657;
-}
 
 /*End of Projects Section CSS*/
 

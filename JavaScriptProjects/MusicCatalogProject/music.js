@@ -85,10 +85,10 @@ function addMusic(event) {
 
 
   const duplicate = addedSongs.some(song =>
-    normalize(song.title) === title &&
-    normalize(song.artist) === artist &&
-    normalize(song.album) === album &&
-    normalize(song.year) === year
+    normalize(song.title) === normalize(title) &&
+    normalize(song.artist) === normalize(artist) &&
+    normalize(song.album) === normalize(album) &&
+    normalize(song.year) === normalize(year)
   );
 
   if (duplicate) {
