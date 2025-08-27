@@ -151,18 +151,6 @@ function calculateTotal(){
 
 }
 
-/*
-     alert(`Your Order:
-        Pizza Size: ${size}
-        Crust: ${crust}
-        Sauce: ${sauce}
-        Meat Toppings: ${meats}
-        Non-Meat Toppings: ${nonMeats}
-        
-        Sales Tax: 7%
-        Total: ${total}`);
-        */
-
 
 function orderPizza(){
     const size = getSize();
@@ -182,7 +170,7 @@ function orderPizza(){
   Sauce: ${sauce}<br>
   Meat Toppings: ${meats}<br>
   Non-Meat Toppings: ${nonMeats}<br>
-  ---------------------------------------
+  ------------------------
   <br>
   Sales Tax: 7%<br>
   <strong>Total: $${total}</strong>`;

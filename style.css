@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     background-color: #F5E2CE;
+    scroll-behavior: smooth;
     
 }
 
@@ -120,14 +121,16 @@ background-color: #F5E2CE;
     margin: auto;
     min-height: 800px;
     height: auto;
-    padding: 0 20px; /* Add horizontal padding */
     
 }
+
+
 
 .heroSection h1 {
     font-size: 64px;
     position: relative;
     margin-top: 25%;
+    margin-left: 20px;
 
 
     opacity: 0;
@@ -158,6 +161,7 @@ background-color: #F5E2CE;
   animation-delay: 0.3s; 
   list-style: none; 
   padding: 0;
+  margin: 20px;
 
 }
 
@@ -198,9 +202,11 @@ background-color: #F5E2CE;
 #aboutMe{
     max-width: 1500px;
     margin: -80px auto;
-    min-height: 800px;
+    min-height: 700px;
     height: auto;
     padding-top: 80px;
+    padding: 0 40px;
+    scroll-margin-top: 80px;
 
 }
 
@@ -228,6 +234,8 @@ background-color: #F5E2CE;
     min-height: 100vh;
     height: auto;
     padding-top: 80px;
+    padding: 0 40px;
+    scroll-margin-top: 80px;
 
 }
 
@@ -244,14 +252,14 @@ background-color: #F5E2CE;
 
 .project-grid {
   display: flex;
-  flex-wrap: wrap;          /* allows wrapping when space runs out */
-  justify-content: center;  /* centers cards horizontally */
-  gap: 2rem;                /* spacing between cards */
+  flex-wrap: wrap;          
+  justify-content: center;  
+  gap: 2rem;               
 }
 
 .project-card {
-  flex: 1 1 calc(33.333% - 2rem); /* 3 cards per row */
-  max-width: 320px;               /* prevents cards from stretching too wide */
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: 320px;               
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
@@ -260,44 +268,68 @@ background-color: #F5E2CE;
 }
 
 .project-card:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(-8px) translateX(3px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .project-card img {
   width: 100%;
+  height: 250px;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-/* Tech stack badges */
+.project-info{
+    line-height: 20px;
+    padding: 10px;
+}
+.project-info h3{
+    height: 40px;
+}
+
+.project-info p{
+    margin: 5px 0px;
+    min-height: 80px;
+}
+
 .tech-stack span {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  margin: 0.25rem 0.25rem 0 0;
+  padding: 5px;
+  margin: 5px 0px;
+  margin-right: 10px;
   border-radius: 6px;
-  font-size: 0.8rem;
   background-color: #eee;
 }
 
-/* Project links */
-.project-links a {
-  margin-right: 1rem;
-  font-weight: bold;
-  color: #007acc;
-  text-decoration: none;
+.project-links{
+    margin: 20px 0px;
 }
 
-/* Responsive: stack cards into 1 per row on mobile */
+.project-links a {
+  font-weight: bold;
+  color:#E5A657 !important;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 4px;
+}
+
+.project-links a:visited{
+    color:#E5A657 !important
+}
+
+.project-links a:hover{
+    color:#992A1F !important
+}
+
 @media (max-width: 900px) {
   .project-card {
-    flex: 1 1 calc(45% - 2rem); /* 2 per row on tablets */
+    flex: 1 1 calc(45% - 2rem);
     margin: 5px;
   }
 }
 @media (max-width: 600px) {
   .project-card {
-    flex: 1 1 100%; /* 1 per row on mobile */
+    flex: 1 1 100%;
   }
 }
 
@@ -308,10 +340,15 @@ background-color: #F5E2CE;
 /*Start of Resume Section CSS*/
 #resume{
     max-width: 1500px;
-    margin: -80px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
     min-height: 100vh;
     height: auto;
     padding-top: 80px;
+    padding: 0 40px;
+    scroll-margin-top: 80px;
 
 }
 
@@ -367,10 +404,13 @@ background-color: #F5E2CE;
 #contact{
     max-width: 1500px;
     margin: -100px auto;
-    min-height: 100vh;
+    min-height: 80vh;
     height: auto;
-    padding-top: 300px;
+    padding-top: 200px;
     padding-right: 50px;
+    padding-left: 50px;
+    scroll-margin-top: 80px;
+    
 }
 #contactContainer{
     
@@ -513,7 +553,8 @@ textarea{
     .dropdown-content {
         right: 0; 
         left: auto;
-        width: 100px;
+        width: 100%;
+        text-align: right;
     }
 
     .dropdown-content li a {
@@ -539,6 +580,14 @@ textarea{
     }
 
     /* ABOUT ME / PORTFOLIO */
+    #aboutMe{
+        scroll-margin-top: 10px;
+    }
+    
+    #portfolio{
+        scroll-margin-top: 10px;
+    }
+
     .showcase {
         flex-direction: column;
         gap: 10px;
@@ -581,8 +630,16 @@ textarea{
     text-align: center;
   }
 
+  #resume{
+    scroll-margin-top: 2px;
+  }
+
 
     /* CONTACT SECTION */
+    #contact{
+        scroll-margin-top: 10px;
+        min-height: 100svh;
+    }
     #contactContainer {
         width: 90%;
         padding: 10px;
