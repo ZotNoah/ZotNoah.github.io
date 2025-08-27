@@ -597,6 +597,9 @@ textarea{
         flex: 1 1 100%;
         padding: 10px;
     }
+    .project-info h3{
+    height: 80px;
+}
 
     .description h3 {
         font-size: 20px;
