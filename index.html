@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Noah Unverzagt Portfolio</title>
 </head>
@@ -67,7 +70,7 @@
     
             <!-- Professional Project Card -->
                 <div class="project-card">
-                    <img src="images/Figma Concert App.PNG" alt="Screenshot of Figma wireframe project">
+                    <img src="images/FigmaConcertApp.PNG" alt="Screenshot of Figma wireframe project">
                     <div class="project-info">
                         <h3>UX Wireframe: Concert Discovery App</h3>
                         <p>A work-in-progress wireframe created in Figma to explore layout and navigation flow for a concert discovery app.</p>
@@ -89,7 +92,7 @@
                             <span>HTML</span><span>CSS</span><span>JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="UXProjects/Adventure Ted Scholarship.pdf" target="_blank">View PDF</a>
+                            <a href="UXProjects/AdventureTedScholarship.pdf" target="_blank">View PDF</a>
                         </div>
                     </div>    
                 </div>
@@ -122,7 +125,7 @@
                     </div>
                 </div>
                 <div class="project-card creative">
-                    <img src="images/Game Website.PNG" alt="8-Bit Portfolio Screenshot">
+                    <img src="images/GameWebsite.PNG" alt="8-Bit Portfolio Screenshot">
                     <div class="project-info">
                         <h3>Interactive 8-Bit Portfolio</h3>
                         <p>Game-themed portfolio showcasing front-end animations and interactive UI design. Music and accessibility included.</p>
@@ -239,10 +242,19 @@
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <h3>Contact</h3>
                     <input type="hidden" name="access_key" value="2cc17d68-6271-4ce0-8d94-214f389c574b">
-                    <input type="text" id="name" name="name" placeholder="Name" class="contactMe"><br><br>
-                    <input type="text" id="email" name="email" placeholder="Email" class="contactMe"><br><br>
-                    <textarea type="text" id="message" name="message" placeholder="Message" rows="10" cols="50"
+                    <div class="formInputs">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name" class="contactMe"><br>
+                    </div>
+                    <div class="formInputs">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Email" class="contactMe"><br>
+                    </div>
+                    <div class="formInputs">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Message" rows="10" cols="50"
                     style="resize: none"></textarea><br>
+                    </div>
                     <div id="contactSubmit">
                         <button type="submit" id="contactButton">submit</button>
                     </div>

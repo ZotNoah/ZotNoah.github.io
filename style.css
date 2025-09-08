@@ -4,6 +4,7 @@
     padding: 0px;
     background-color: #F5E2CE;
     scroll-behavior: smooth;
+    font-family: "Domine", serif;
     
 }
 
@@ -36,7 +37,7 @@ background-color: #F5E2CE;
     font-size: 24px;
     text-decoration: none;
     background-color: #F5E2CE;
-    color: #E5A657;
+    color: #B53324;
     margin-top: 20px;
     transform: scale(1);
     transition: font-size 0.3s ease-in-out, transform 0.2s ease-in-out;
@@ -48,7 +49,7 @@ background-color: #F5E2CE;
     font-size: 28px;
     text-decoration: underline;
     transform: scale(1.1);
-    color:#B53324;
+    color:#691D15;
     
 }
 
@@ -138,7 +139,7 @@ background-color: #F5E2CE;
     animation: slideDown 1.3s ease-out forwards;
     animation-delay: 0.3s;
 
-    color:#B53324;
+    color:#005799;
 }
 
 
@@ -183,7 +184,7 @@ background-color: #F5E2CE;
 
 .heroSection li a{
     text-decoration: none;
-    color: #E5A657;
+    color: #B53324;
     font-size: 26px;
     transform: scale(1);
     transition: font-size 0.3s ease-in-out, transform 0.2s ease-in-out;
@@ -193,7 +194,7 @@ background-color: #F5E2CE;
     font-size: 36px;
     text-decoration: underline;
     transform: scale(1.1);
-    color:#B53324;
+    color:#691D15;
     
 }
 /*End of Hero Section CSS*/
@@ -211,7 +212,7 @@ background-color: #F5E2CE;
 }
 
 #aboutMe h1{
-    color:#B53324;
+    color:#005799;
     font-size: 36px;
     margin: 20px;
 
@@ -240,7 +241,7 @@ background-color: #F5E2CE;
 }
 
 #portfolio h1{
-    color:#B53324;
+    color:#005799;
     font-size: 36px;
     margin: 20px;
 
@@ -295,6 +296,10 @@ background-color: #F5E2CE;
     min-height: 80px;
 }
 
+.tech-stack{
+    min-height: 70px;
+}
+
 .tech-stack span {
   display: inline-block;
   padding: 5px;
@@ -310,18 +315,18 @@ background-color: #F5E2CE;
 
 .project-links a {
   font-weight: bold;
-  color:#E5A657 !important;
+  color:#B53324 !important;
   text-decoration: none;
   margin-right: 20px;
   padding: 4px;
 }
 
 .project-links a:visited{
-    color:#E5A657 !important
+    color:#B53324 !important
 }
 
 .project-links a:hover{
-    color:#992A1F !important
+    color:#691D15 !important
 }
 
 @media (max-width: 900px) {
@@ -359,14 +364,14 @@ background-color: #F5E2CE;
 
 /*End of Resume Section CSS*/
 #resume h1{
-    color:#B53324;
+    color:#005799;
     font-size: 36px;
     margin: 20px;
 
 }
 
 #resume h2{
-    color:#B53324;
+    color:#005799;
     margin: 20px;
 }
 
@@ -386,11 +391,11 @@ background-color: #F5E2CE;
 }
 
 .jobs a{
-    color: #E5A657 !important;
+    color: #B53324 !important;
 }
 
 .jobs h3 a:hover{
-    color: #B53324 !important;
+    color: #691D15 !important;
 }
 
 .school{
@@ -435,7 +440,6 @@ background-color: #F5E2CE;
 
 .contactMe{
     width: 650px;
-    margin: 0px 20px;
     height: 30px;
     border-radius: 5px;
     background-color: lightgray;
@@ -444,9 +448,19 @@ background-color: #F5E2CE;
 
 }
 
+.formInputs{
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.formInputs label{
+    margin-bottom: 10px;
+}
+
+
 textarea{
     width: 650px;
-    margin: 0px 20px;
     border-radius: 5px;
     background-color: lightgray;
     border: none;
@@ -463,7 +477,7 @@ textarea{
 
 #contactButton{
     margin: 20px;
-    background-color: #B53324;;
+    background-color: #B53324;
     color: white;
     padding: 10px 20px;
     border-radius: 15px;
@@ -474,7 +488,7 @@ textarea{
 #contactButton:hover{
     box-shadow: 2px 2px black;
     cursor: pointer;
-    background-color: #992A1F  ;
+    background-color: #691D15;
 }
 /*End of Contact Page CSS*/
 
@@ -558,8 +572,9 @@ textarea{
 
     .dropdown-content li a {
         font-size: 16px;
-        padding: 8px;
-        color: #E5A657;
+        padding: 10px;
+        color: #005799;
+        margin-right: 15px;
     }
 
     /* HERO SECTION */
@@ -648,7 +663,7 @@ textarea{
     .contactMe,
     textarea {
         width: 100%;
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     #contactButton {
