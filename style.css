@@ -218,7 +218,7 @@ background-color: #F5E2CE;
 }
 
 #aboutMe p{
-    color: #b89771;
+    color: #000;
     font-size: 18px;
     margin: 20px;
 
@@ -280,15 +280,18 @@ background-color: #F5E2CE;
 }
 
 .project-info{
-    line-height: 20px;
     padding: 10px;
 }
 .project-info h3{
-    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40px;
 }
 
 .project-info p{
     margin: 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
     min-height: 80px;
 }
 
@@ -368,11 +371,7 @@ background-color: #F5E2CE;
 }
 
 #resume{
-    color: #b89771;
-}
-
-.wordpressPortfolio strong{
-    margin-left: 20px;
+    color: #000;
 }
 
 #resume a{
@@ -597,9 +596,6 @@ textarea{
         flex: 1 1 100%;
         padding: 10px;
     }
-    .project-info h3{
-    height: 80px;
-}
 
     .description h3 {
         font-size: 20px;
