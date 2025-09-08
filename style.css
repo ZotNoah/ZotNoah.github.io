@@ -283,10 +283,11 @@ background-color: #F5E2CE;
 .project-info{
     padding: 10px;
 }
-.project-info h3{
+.project-info h2{
     display: flex;
     flex-wrap: wrap;
     min-height: 40px;
+    font-size: 20px;
 }
 
 .project-info p{
@@ -375,6 +376,14 @@ background-color: #F5E2CE;
     margin: 20px;
 }
 
+#resume h3{
+    font-size: 14px;
+}
+
+#resume h4{
+    font-size: 20px;
+}
+
 #resume{
     color: #000;
 }
@@ -400,6 +409,15 @@ background-color: #F5E2CE;
 
 .school{
     margin: 20px 40px;
+}
+
+#resume_education h3{
+    font-size: 20px;
+}
+
+#webPortfolio{
+    color: #000 !important;
+    font-size: 20px;
 }
 
 
@@ -533,7 +551,6 @@ textarea{
     }
 
     h1, h2, h3 {
-        font-size: 24px !important;
         text-align: center;
     }
 
@@ -651,7 +668,7 @@ textarea{
 
     /* CONTACT SECTION */
     #contact{
-        scroll-margin-top: 10px;
+        scroll-margin-top: -80px;
         min-height: 100svh;
     }
     #contactContainer {
@@ -659,6 +676,10 @@ textarea{
         padding: 10px;
         margin: 80px auto;
     }
+
+    .formInputs{
+    margin-left: 0px;
+}
 
     .contactMe,
     textarea {
