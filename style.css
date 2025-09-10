@@ -103,7 +103,7 @@ background-color: #F5E2CE;
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: #B53324 !important;
 }
 
 .dropdown-content.show {
@@ -403,7 +403,7 @@ background-color: #F5E2CE;
     color: #B53324 !important;
 }
 
-.jobs h3 a:hover{
+.jobs a:hover{
     color: #691D15 !important;
 }
 
