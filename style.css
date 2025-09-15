@@ -120,7 +120,7 @@ background-color: #F5E2CE;
 .heroSection{
     max-width: 1500px;
     margin: auto;
-    min-height: 500px;
+    min-height: 75vh;
     height: auto;
     padding: 0px 40px;
     
