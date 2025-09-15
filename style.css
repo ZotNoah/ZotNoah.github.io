@@ -11,7 +11,7 @@
 /*Start of Nav Bar CSS*/
 
 #navBar{
-    height: 80px;
+    height: 60px;
     position: fixed;
     top: -50px; /* Hidden off-screen at first */
     left: 0;
@@ -120,8 +120,9 @@ background-color: #F5E2CE;
 .heroSection{
     max-width: 1500px;
     margin: auto;
-    min-height: 800px;
+    min-height: 500px;
     height: auto;
+    padding: 0px 40px;
     
 }
 
@@ -130,7 +131,7 @@ background-color: #F5E2CE;
 .heroSection h1 {
     font-size: 64px;
     position: relative;
-    margin-top: 25%;
+    margin-top: 250px;
     margin-left: 20px;
 
 
@@ -203,11 +204,11 @@ background-color: #F5E2CE;
 #aboutMe{
     max-width: 1500px;
     margin: -80px auto;
-    min-height: 700px;
+    min-height: 500px;
     height: auto;
     padding-top: 80px;
     padding: 0 40px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 60px;
 
 }
 
@@ -232,11 +233,11 @@ background-color: #F5E2CE;
 #portfolio{
     max-width: 1500px;
     margin: -80px auto;
-    min-height: 100vh;
+    min-height: 500px;
     height: auto;
     padding-top: 80px;
     padding: 0 40px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 60px;
 
 }
 
@@ -353,11 +354,11 @@ background-color: #F5E2CE;
     margin-right: auto;
     margin-top: 200px;
     margin-bottom: 100px;
-    min-height: 100vh;
+    min-height: 500px;
     height: auto;
     padding-top: 80px;
     padding: 0 40px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 60px;
 
 }
 
@@ -431,7 +432,7 @@ background-color: #F5E2CE;
     padding-top: 200px;
     padding-right: 50px;
     padding-left: 50px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 60px;
     
 }
 #contactContainer{
@@ -595,6 +596,10 @@ textarea{
     }
 
     /* HERO SECTION */
+    .heroSection{
+        min-height: 80svh;
+    }
+
     .heroSection h1 {
         font-size: 32px;
         margin-top: 120px;
