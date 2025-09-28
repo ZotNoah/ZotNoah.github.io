@@ -6,6 +6,9 @@ const searchButton = document.getElementById("searchButton");
 const weatherResult = document.getElementById("weatherResult");
 const errorMsg = document.getElementById("error");
 
+let currentTempCelsius = null;
+let showingCelsius = true;  
+
 searchButton.addEventListener("click", () => {
     const city = cityInput.value.trim();
     if(city){
@@ -32,13 +35,20 @@ function getWeather(city){
     .catch(error => showError());
 }
 
+function calculateFahrenhiet(){
+
+}
+
 function updateWeather(data) {
-    if(Number(data.cod) === 200) {
+    if (Number(data.cod) === 200) {
         errorMsg.classList.add("hidden");
         weatherResult.classList.remove("hidden");
 
         document.getElementById("cityName").textContent = data.name;
-        document.getElementById("temperature").textContent = `Temperature: ${data.main.temp}°C`;
+        
+        // Save Celsius temperature
+        currentTempCelsius = data.main.temp;
+        document.getElementById("temperature").textContent = `Temperature: ${currentTempCelsius}°C`;
         document.getElementById("description").textContent = `Weather: ${data.weather[0].description}`;
         document.getElementById("weatherIcon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
         document.getElementById("humidity").textContent = `Humidity: ${data.main.humidity}%`;
@@ -46,10 +56,25 @@ function updateWeather(data) {
 
         cityInput.value = "";
     } else {
-        console.log("Data invalid", data);
         showError();
     }
 }
+
+    document.getElementById("unitToggle").addEventListener("click", () => {
+        if (currentTempCelsius !== null) {
+            let tempText = "";
+            if (showingCelsius) {
+                let fahrenheit = (currentTempCelsius * 9/5) + 32;
+                tempText = `Temperature: ${fahrenheit.toFixed(1)}°F`;
+                document.getElementById("unitToggle").textContent = "Switch to °C";
+            } else {
+                tempText = `Temperature: ${currentTempCelsius}°C`;
+                document.getElementById("unitToggle").textContent = "Switch to °F";
+            }
+            document.getElementById("temperature").textContent = tempText;
+            showingCelsius = !showingCelsius; // flip mode
+        }
+});
 
 function showError() {
     weatherResult.classList.add("hidden");
