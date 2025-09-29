@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Projects - Noah Unverzagt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+        <div class="dropdown" id="mobileDropdown">
+            <button onclick="dropDown()" class="dropbtn" id="mobileButton">☰</button>
+            <ul id="myDropdown" class="dropdown-content">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#aboutMe">About</a></li>
+                    <li><a href="index.html#portfolio">Projects</a></li>
+                    <li><a href="index.html#resume">Resume</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+  </header>
+
+  <main>
+    <div id="navBar">
+            <nav id="stickyNav">
+                <ul>
+                    <li><a href="index.html#home">// Home</a></li>
+                    <li><a href="index.html#aboutMe">// About</a></li>
+                    <li><a href="index.html#portfolio">// Projects</a></li>
+                    <li><a href="index.html#resume">// Resume</a></li>
+                    <li><a href="index.html#contact">// Contact</a></li>
+                </ul>
+            </nav>
+             
+        </div>
+    <section class="heroSection" style="display: none;">
+        </section>
+    <section id="projects" class="fade-in">
+        <h1 id="projectHeader">All Projects</h1>
+      <section class="filter-section">
+            <label for="techFilter" id="filterTitle">Filter by technology:</label>
+            <select id="techFilter">
+            <option value="all">All</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="api">API</option>
+            <option value="figma">Figma</option>
+            <option value="bootstrap">Bootstrap</option>
+            <option value="react">React</option>
+            </select>
+        </section>
+
+      <!-- Project Grid -->
+      <div class="project-grid">
+        <!-- Example card (reuse your existing ones) -->
+        <div class="project-card" data-tags="Figma">
+          <img src="images/FigmaConcertApp.PNG" alt="Concert Discovery App">
+          <div class="project-info">
+            <h2>UX Wireframe: Concert Discovery App</h2>
+            <p>A work-in-progress wireframe created in Figma to explore layout and navigation flow for a concert discovery app.</p>
+            <div class="tech-stack">
+              <span>Figma</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.figma.com/" target="_blank">View Prototype</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-tags="Figma HTML CSS JavaScript">
+            <img src="images/internshipFigma.PNG" alt="Screenshot of Internship Project">
+            <div class="project-info">
+                <h2>Internship: Childhood Cancer Society</h2>
+                <p>Collaborated with developers and cross-department teams to design a wireframe for a real-world website project</p>
+                <div class="tech-stack">
+                    <span>Figma</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="UXProjects/AdventureTedScholarship.pdf" target="_blank">View PDF</a>
+                </div>
+            </div>    
+        </div>
+        <div class="project-card creative" data-tags="HTML CSS JavaScript">
+            <img src="images/MusicCatalog.PNG" alt="Music Catalog Screenshot">
+            <div class="project-info">
+                <h2>Music Catalog Project</h2>
+                <p>A personal music library app demonstrating object-oriented programming and interactive DOM manipulation.</p>
+                <div class="tech-stack">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="JavaScriptProjects/MusicCatalogProject/index.html" target="_blank">Live Demo</a>
+                    <a href="https://github.com/ZotNoah/ZotNoah.github.io/tree/main/JavaScriptProjects" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card creative" data-tags="HTML CSS JavaScript API">
+            <img src="images/weatherApp.PNG" alt="Weather App Screenshot">
+            <div class="project-info">
+                <h2>Simple Weather App</h2>
+                <p>A responsive web app that fetches real-time weather data from the OpenWeatherMap API and displays temperature, conditions, humidity, and wind speed.</p>
+                <div class="tech-stack">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+                </div>
+                <div class="project-links">
+                    <a href="JavaScriptProjects/weatherApp/index.html" target="_blank">Live Demo</a>
+                    <a href="https://github.com/ZotNoah/ZotNoah.github.io/tree/main/JavaScriptProjects" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card creative" data-tags="HTML CSS JavaScript Bootstrap">
+            <img src="images/PizzaProject.PNG" alt="Pizza Project Screenshot">
+            <div class="project-info">
+                <h2>Bootstrap Pizza Project</h2>
+                <p>An interactive web app for customizing pizzas, featuring dynamic JavaScript, Bootstrap styling, form handling, and live DOM updates.</p>
+                <div class="tech-stack">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                </div>
+                <div class="project-links">
+                    <a href="JavaScriptProjects/pizzaProject/index.html" target="_blank">Live Demo</a>
+                    <a href="https://github.com/ZotNoah/ZotNoah.github.io/tree/main/JavaScriptProjects" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card creative" data-tags="HTML CSS JavaScript">
+            <img src="images/GameWebsite.PNG" alt="8-Bit Portfolio Screenshot">
+            <div class="project-info">
+                <h2>Interactive 8-Bit Portfolio</h2>
+                <p>Game-themed portfolio showcasing front-end animations and interactive UI design. Music and accessibility included.</p>
+                <div class="tech-stack">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://zotnoah.github.io/gamingWebsite/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/zotnoah/gamingWebsite" target="_blank">GitHub</a>
+                </div>
+            </div>  
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+  <script src="dropDown.js"></script>
+  <script src="filter.js"></script>
+</body>
+</html>

@@ -343,6 +343,33 @@ background-color: #F5E2CE;
   }
 }
 
+#projectsButton{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#projectsButton a{
+    background-color: #B53324;
+    color: white;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+}
+
+#projectsButton a:hover{
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    background-color: #691D15;
+}
+
+#projectsButton a:visited{
+    color: #fff;
+}
+
 
 /*End of Projects Section CSS*/
 
@@ -455,6 +482,7 @@ background-color: #F5E2CE;
     margin-bottom: 25px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    color:#005799;
 }
 
 .contactMe{
@@ -703,3 +731,53 @@ textarea{
 
 
 /*End of Mobile Nav CSS*/
+
+/*CSS for projects.html*/
+.filter-section {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.filter-section label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #333;
+}
+
+#techFilter {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#techFilter:hover,
+#techFilter:focus {
+  border-color: #B53324;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.3);
+  outline: none;
+}
+
+#filterTitle{
+    font-size: 24px;
+}
+
+#projectHeader{
+    display: flex;
+    justify-content: center;
+    color: #005799;
+     font-size: 36px;
+    margin: 20px;
+
+}
+
+#projects{
+    max-width: 1500px;
+    margin: auto;
+
+}
